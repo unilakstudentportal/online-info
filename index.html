@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html xmlns="http://127.0.0.1:5500/index.html">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" /><meta name="description" /><meta name="author" /><title>
+	UNILAK
+</title><link rel="shortcut icon" href="images/favicon.ico" /><link rel="icon" type="image/png" href="images/logo_unilak.jpg" sizes="96x96" />
+    <!-- favicon-32x32.png - For Safari on Mac OS. -->
+    <link rel="icon" type="image/png" href="images/logo_unilak.jpg" sizes="32x32" />
+    <!-- favicon-16x16.png - The classic favicon, displayed in the tabs. -->
+    <link rel="icon" type="image/png" href="images/logo_unilak.jpg" sizes="16x16" />
+     <!-- Theme style -->
+    <script src="dist/js/jquery-1.8.3.min.js"></script>
+     <link href="js/sweetalert.css" rel="stylesheet" />
+    <script src="js/sweetalert.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> 
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet" />
+     <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" /><link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css" />
+
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" /> 
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet" />
+      <!-- Modernizer for Portfolio -->
+
+    <script src="js/modernizer.js"></script>
+    <script src="script/js_alert.js"></script>
+    <style>
+        h2{
+            color: #0094ff;
+        }
+    </style>
+    <script>
+        function showpwd() {
+            var x = document.getElementById("pwdbox");
+            var y = document.getElementById("confpwdbox");
+            if (x.type === "password") {
+                x.type = "text";
+                y.type = "text";
+            } else {
+                x.type = "password";
+                y.type = "password";
+            }
+        }
+    </script>
+    <script>
+        function viewalert(msg, type, title) {
+            swal({
+                title: title,
+                text: msg,
+                type: type
+            });
+        }
+
+    </script>
+     <script type="text/javascript">
+         function ShowPopup() {
+             $("#btnShowPopup").click();
+         }
+    </script>
+    <script type="text/javascript">
+
+        function openModal() {
+            $('#myModal').modal('show');
+        }
+        </script>
+   
+    
+</head>
+<body>
+        <form action="http://127.0.0.1:5500/index.html">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="rLVsCHKkoZ/Zqfe1JutpTTPHsl2tp7ZkjIBeOv2+TqqW8Bj6keYXXm1VpdEcElP5wOt+a1aejJFhxOxEc9HQZmpibQbDjI2TdbIsikTFig+raADupXsAnFG4pSkhNTUmRwuBQmt8OmExMFXWUIJYHWRnEMU1UoO/RcAFpvH1FTYdebQoBZkd8umU/aL7x568+VIxySmR36UKcFMoYU1lQ8e3M45hxmdBUCdA3rvQGk0=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="aQrJWirBo5y5kd5+Wuto+mWTm/09sduT3QnCFIDCx8yRfjlxEKFTuXjn0Jz75CFq1fbxYSvUixAEgqF4LnkXH9IiY2IPTzcZRiZd0rmVGD+W/iz4h3c7oMyCsgAwYJl/OlKxTMJfuncGbLgpT6venkE8zZNmVeeB3QKYR3ob0wg=" />
+</div>
+    
+            
+    <style>
+       @import url("https://fonts.googleapis.com/css?family=Exo:400,700"); 
+body {
+   font-family: "Exo", sans-serif;
+ 
+font-family: arial;
+}
+input::placeholder {
+  color: black;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.context {
+   width: 100%;
+   position: absolute;
+   top: 50vh;
+}
+
+.context h1 {
+   text-align: center;
+   color: #fff;
+   font-size: 50px;
+}
+
+.area {
+   background: #4e54c8;
+   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+   width: 100%  !important;
+   height: 100% !important;
+   z-index:1;
+   position:absolute; 
+    margin-top:-150px !important;
+}
+
+.circles {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.circles li {
+   position: absolute;
+   display: block;
+   list-style: none;
+   width: 20px;
+   height: 20px;
+   background: rgba(255, 255, 255, 0.2);
+   animation: animate 25s linear infinite;
+   bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+   left: 25%;
+   width: 80px;
+   height: 80px;
+   animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+   left: 10%;
+   width: 20px;
+   height: 20px;
+   animation-delay: 2s;
+   animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+   left: 70%;
+   width: 20px;
+   height: 20px;
+   animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+   left: 40%;
+   width: 60px;
+   height: 60px;
+   animation-delay: 0s;
+   animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+   left: 65%;
+   width: 20px;
+   height: 20px;
+   animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+   left: 75%;
+   width: 110px;
+   height: 110px;
+   animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+   left: 35%;
+   width: 150px;
+   height: 150px;
+   animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+   left: 50%;
+   width: 25px;
+   height: 25px;
+   animation-delay: 15s;
+   animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+   left: 20%;
+   width: 15px;
+   height: 15px;
+   animation-delay: 2s;
+   animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+   left: 85%;
+   width: 150px;
+   height: 150px;
+   animation-delay: 0s;
+   animation-duration: 11s;
+}
+.pos{
+    z-index:99;
+    position:relative;
+}
+@keyframes animate {
+   0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+      
+   }
+
+   100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+     
+   }
+}
+li{
+    text-align:center;
+    align-content:center;
+    align-items:center;
+}
+
+.info {
+float: left;
+color: white;
+padding-top: 30px;
+}
+.form_body{
+position: absolute;
+left: 50%;
+  padding-top:1%; 
+  margin-top:60% !important;
+height: 390px;
+width: 400px;
+transform: translate(-50%, -50%);
+background: linear-gradient(to right, rgba(0, 40, 90, 0.9), rgb(0 0 0 / 35%));
+border-radius: 10px;
+border-top-left-radius: 50px;
+border-bottom-right-radius: 50px;
+border: 1px solid #2980b9;
+}
+.form_body img{
+height: 120px;
+width: 120px;
+position: relative;
+left: 33%;
+margin-top: -67px;	
+}
+lydiv{
+    /*margin-top:100px;*/
+    margin:0;
+}
+.applydiv img{
+    width:100%; 
+    height:40%;
+    margin-left:-70px !important;
+    border-radius: 16px  16px  16px  16px;
+    margin-bottom:8px;
+    margin-top:3px;
+    color:#fff;
+
+}
+.form_body .text{
+font-size: 30px;
+font-weight: 600;
+color: orange;
+margin-left: 80px;
+margin-top:20px;
+padding-bottom: 15px;
+border-bottom: 2px solid;
+border-radius: 3px;
+width: 250px;
+}
+.form_body input{
+height: 40px;
+width: 75%;
+margin-left: 45px;
+padding-left: 10px;	
+color: white;
+border: none;
+border: 1px solid white;
+border-radius: 2px;
+outline: none;
+font-family: verdana;
+background: transparent;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+font-size: 15px;
+}
+.form_body input:hover{
+transition: .5s;
+    border: 1px solid #2980b9;
+    color: #3498db;
+}
+.form_body input[type="password"]{
+margin-top: 30px;
+}
+::placeholder{
+font-size: 16px;	
+color: white;
+}
+.form_body button{
+margin-top: 40px;
+margin-left: 45px;
+height: 40px;
+    width: 78.5%;
+    color: #b9c4c6;
+    font-size: 22px;
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    border: 2px solid #2980b9;
+    cursor: pointer;	
+}
+.form_body button:hover{
+transition: .5s;
+color: #d5dbdd;
+    border: 2px solid #3498db;
+background: linear-gradient(#34495e, #2c3e50);
+}
+    </style> 
+    <div class="area" >
+          <header class=" py-5 mb-5 pos">
+
+        <span id="ContentPlaceHolder1_Label1"></span>
+               
+
+    <div class="container h-100 " >
+      <div class="row h-100 align-items-center">
+          <div class="col-lg-6" > 
+                <div id="ContentPlaceHolder1_form3" class="form_body" style="margin-top:30%;width:400px;">
+                    <img src="/Images/logo_unilak1.webp" class="img-circle" width="30" />
+                    <p class="text"> Login to Account</p>
+                <div class="http://127.0.0.1:5500/index.html">
+                <input name="ctl00$ContentPlaceHolder1$usernamebox" type="text" id="ContentPlaceHolder1_usernamebox" required="required" placeholder="Username.." value="22727\2023" /><br/>
+                <input name="ctl00$ContentPlaceHolder1$passwordbox" type="password" id="ContentPlaceHolder1_passwordbox" required="required" placeholder="Password.." /><br/><br/>
+                <button type="submit" formaction="home.html">Log In</button>
+                </div>
+
+                    </div>
+              </div>
+      </div>
+    </div>
+     <script>
+         function applylink()
+         {
+             window.location.href = 'http://127.0.0.1:5500/index.html';
+         }
+
+         function checklink()
+         {
+             var id = document.getElementById('idbox').value;
+             window.location.href = 'http://127.0.0.1:5500/index.html=' + id;
+         }
+     </script>
+               
+  </header>
+            <ul class="circles">
+                    <li></li> <li></li>
+                    <li></li> <li></li>
+                    <li></li> <li></li>
+                    <li></li> <li></li>
+                    <li></li> <li></li>
+                    <li></li> <li></li>
+                    <li></li> <li></li>
+                    <li></li> <li></li>
+                    <li></li> <li></li>
+                    <li></li> <li></li>
+            </ul>
+    </div >
+     
+  <div class="modal fade" id="checkmodal" role="dialog">
+        <div class="modal-dialog expand">
+            <div class="modal-content">  
+      
+            </div> 
+       </div> 
+   </div> 
+   
+ 
+        <footer class="py-5 bg-dark" style="position: fixed;bottom:0;width:100%;height:10px !important;visibility:visible;"> 
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; UNILAK 2024</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+</html>
